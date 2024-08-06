@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.Semaphore;
 
-public class Main {
+public class  Main {
     public static void main(String[] args) {
         Queue<Object> store = new ConcurrentLinkedQueue<>();
         int maxSize = 6;

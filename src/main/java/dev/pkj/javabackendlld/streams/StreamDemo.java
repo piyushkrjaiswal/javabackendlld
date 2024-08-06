@@ -38,6 +38,15 @@ public class StreamDemo {
 
 
         // flatmap
+        List<List<String>> nums = new ArrayList<>();
+        nums.add(Arrays.asList("abc", "def"));
+        nums.add(Arrays.asList("hij", "klm"));
+        nums.add(Arrays.asList("lmo", "pqr"));
+
+        List<String> flatList = nums.stream().flatMap(lst -> lst.stream()).toList();
+        flatList.stream().forEach(x -> System.out.println(x));
+
+
 
 
     }

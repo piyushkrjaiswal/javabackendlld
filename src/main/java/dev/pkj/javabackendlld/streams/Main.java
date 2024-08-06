@@ -21,5 +21,12 @@ public class Main {
         sb.add(8);
         sb.build();
 
+        List<Integer> numbers1 = Arrays.asList(1, 6, 9, 10);
+        Stream<Integer> stream2 = numbers1.stream();
+
+        Stream<Integer> ls = Stream.concat(stream, stream2);
+        ls.toList().stream().sorted().distinct().forEach(x -> System.out.println(x));
+
+
     }
 }
